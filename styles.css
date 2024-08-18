@@ -9,7 +9,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;   
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.header-text{
+    display: none;
 }
   
 .logo {
@@ -47,7 +51,7 @@
     text-align: center;
 }
   
-.intro-title h1 {
+h1 {
     text-align: center;
     font-size: 35px;
 }
@@ -268,7 +272,6 @@
     cursor: pointer;
     background-color: white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-
 }
   
 .articles-btn button:hover {
@@ -278,7 +281,6 @@
     background-color: #007bff;
 }
   
-
 .articles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -304,7 +306,6 @@
 }
   
 .article img {
-
     width: 198px;
     height: 120px;
     object-fit: cover;
@@ -389,8 +390,7 @@
     padding: 83px 15px;
     gap: 10px;
     box-sizing: border-box; 
-    margin: 0;
-  
+    margin: 0; 
 }
   
 .frame-title {
@@ -506,44 +506,131 @@
 }
 
 
-@media (max-width: 414px) {
+/* Media query for MacBook Pro 14-inch and similar screen sizes */
+@media (min-width: 1300px) and (max-width: 1800px) {
+    body {
+        font-size: 18px;
+        font-family: "Inter";
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+     
+    .header-text {
+        display: flex;
+        margin-left: 0px;
+        width: 100%;
+        align-items: left;
+        gap: 30px;
+    }
+    
+    .header-text p {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+    
+    .intro-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 147px;    
+        margin-top: 45px;
+    }
+    
+    h1 {
+        width: 696px;
+        font-size: 70px;
+    }
+
+    .intro-description{
+        width: 765px;
+        height: 58px;
+        top: 217px;
+        left: 373px;
+        gap: 0px;
+        opacity: 0px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29.05px;
+        text-align: center;
+    }
+
+    .intro-btn{
+        width:  258px;
+        height:  33px;
+        top: 299px;
+        left: 627px;
+        gap: 25px;
+        opacity: 0px;  
+        margin-top: 30px;   
+    }
+        
+
+    .video {
+        width: 460px;
+        height: 298px;
+        top: 378px;
+        left: 526px;
+    }
+
+    .vertical-stripe{
+        margin-bottom: 40px;
+    }
+
+    .square-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        height: 615px;
+    }
+    
+    .about-title{
+        width: 755px;
+        height: 28px;
+        font-size: 40px;
+        font-weight: 400;
+    }
+    
+    .about-description{
+        width: 600px;
+        height: 72px;
+        margin: auto; /* add 20px margin top and center horizontally */
+        text-align: center;
+        margin-top: 0px;
+        font-size: 20px;
+    }
+
+    
+    .hero-img{
+        width: 460px;
+        height: 298px;
+    
+    }
+    
     .cards-group {
-      gap: 10px;
+    
+        grid-template-columns: repeat(3, 1fr);
+    
+        gap: 40px;
+    
     }
-    .card {
-      width: 140px;
-      height: 120px;
-    }
+    
     .articles {
-      max-width: 300px;
+    
+        max-width: 1200px;
+    
     }
+    
     .article {
-      width: 100%;
-    }
-    .list {
-      max-width: 300px;
+    
+        padding: 20px;
+    
+        margin-bottom: 30px;
+    
     }
 }
-
-
-
-@media (min-width: 1024px) {
-    .cards-group {
-        display: grid (3fr 1);
-      gap: 30px;
-    }
-    .card {
-      width: 280px;
-      height: 220px;
-    }
-    .articles {
-      max-width: 800px;
-    }
-    .article {
-      width: calc(25% - 10px);
-    }
-    .list {
-      max-width: 800px;
-    }
-} 
-
