@@ -1,4 +1,4 @@
-/* mobile layout */
+
 
 :root{
     font-family: "Inter", sans-serif;
@@ -144,9 +144,9 @@ h1 {
 .square-about{
     text-align: center;
     justify-content: center;
-    background-color: #f0f0f0; /* Light gray background */
-    padding-top: 20px; /* Add padding to create separation from the white upper part */
-    margin-top: -20px; /* Overlap the white background slightly */
+    background-color: #f0f0f0;
+    padding-top: 20px;
+    margin-top: -20px;
     position: relative;
 };
 
@@ -521,7 +521,6 @@ h1 {
 }
 
 
-/* Media query for MacBook Pro 14-inch and similar screen sizes */
 @media (min-width: 1300px) and (max-width: 1800px) {
     body {
         font-size: 18px;
@@ -609,9 +608,9 @@ h1 {
     .square-about{
         text-align: center;
         justify-content: center;
-        background-color: #f0f0f0; /* Light gray background */
-        padding-top: 20px; /* Add padding to create separation from the white upper part */
-        margin-top: -20px; /* Overlap the white background slightly */
+        background-color: #f0f0f0;
+        padding-top: 20px;
+        margin-top: -20px;
     };
     
     .about-title{
@@ -626,7 +625,7 @@ h1 {
     .about-description{
         width: 600px;
         height: 72px;
-        margin: auto; /* add 20px margin top and center horizontally */
+        margin: auto;
         text-align: center;
         margin-top: 0px;
         margin-bottom: 40px;
@@ -659,7 +658,7 @@ h1 {
     .cards-selection-description{
         width: 600px;
         height: 72px;
-        margin: auto; /* add 20px margin top and center horizontally */
+        margin: auto;
         text-align: center;
         margin-top: 0px;
         margin-bottom: 40px;
@@ -667,7 +666,7 @@ h1 {
     }
 
     .cards-group {
-        position: relative; /* add this */
+        position: relative;
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
         height: 100%;
@@ -676,11 +675,11 @@ h1 {
     }
         
     .cards-group video {
-        position: absolute; /* add this */
+        position: absolute;
         width: 1511px;
         height: 100%;
         object-fit: cover;
-        z-index: -1; /* make sure the video is behind the cards */
+        z-index: -1;
     }
 
     .articles-selection {
@@ -698,7 +697,7 @@ h1 {
         font-size: 30px;
         font-weight: 500;
         text-align: center;
-        margin-bottom: 20px; /* add some space between title and buttons */
+        margin-bottom: 20px;
     }
 
     .articles-btn {
@@ -730,12 +729,12 @@ h1 {
     }
       
     .frame-title {
-        margin-left: 20px; /* remove any left margin */
+        margin-left: 20px;
     }
       
     .frame-btn {
         width: 150px;
-        margin-right: 20px; /* remove any right margin */
+        margin-right: 20px;
     }
 
     .footer {
